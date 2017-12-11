@@ -23,10 +23,9 @@
   <body>
       <nav>
         <ul>
-          <li><a href="#"> Books</a></li>
-          <li a href="#" id="about">About</a></li>
-          <!-- <li><a href="http://twitter.com/brookr" target="_blank" class="icon-twitter3"> Twitter</a></li>
-          <li><a href="http://github.com/brookr" target="_blank" class="icon-github"> GitHub</a></li> -->
+          <li><a href="/"> Books</a></li>
+          <li a href="/about" id="about">About</a></li>
+          <li a href="/new" id="new">New</a></li>
         </ul>
       </nav>
       <main>
@@ -42,12 +41,16 @@
 
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>
+    <script src="https://cdn.rawgit.com/visionmedia/page.js/master/page.js"></script>    
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/0.3.6/marked.min.js"></script> TODO: Deal with this-->
     <!-- <script src="vendor/scripts/highlight.pack.js"></script> TODO: Deal with this-->
-    <script src="/scripts/views/book.js"></script>
-    <script src="/scripts/views/bookView.js"></script>
+    <script src="scripts/models/book.js"></script>
+    <script src="scripts/views/bookView.js"></script>
+    <script src="scripts/routes.js"></script>
     <script>
-    //   Article.fetchAll(bookView.initIndexPage);
-    </script>
+    //   Book.fetchAll(bookView.initIndexPage);
+    // (app.Book.fetchAll(app.book
+    // View.initIndexPage));
+   </script>
   </body>
 </html>
