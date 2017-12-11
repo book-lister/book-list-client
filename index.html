@@ -12,27 +12,23 @@
     <link rel="stylesheet" href="styles/reset.css">
     <!-- <link rel="icon" type="image/x-icon" href="https://avatars2.githubusercontent.com/u/18607604?v=3&s=200"> TODO: Deal with this-->
 
-    <!-- <script id="book-template" type="text/x-handlebars-template">
-      <article class="clearfix" data-author="{{author}}" data-category="{{category}}"> TODO: Deal with this
-        <header>
-          <h1>My Books</h1> 
-          <div class="book">
-            <h2>Book Title</h2> 
-            <h4>Author</h4>>
-          </div>
-        </header>
-    </article>
-    </script> -->
+    <script id="book-template" type="text/x-handlebars-template">
+      <article>
+        <h1>My Books</h1> 
+        <a href="">{{title}}<a>
+        <p>{{author}}</p>  
+      </article>
+    </script>
   </head>
   <body>
       <nav>
         <ul>
-          <li class="tab" data-content="books"><a href="#"> Books</a></li>
-          <li class="tab" data-content="about"><a href="#"> About</a></li>
-          <!-- <li><a href="http://twitter.com/brookr" target="_blank" class="icon-twitter3"> Twitter</a></li>
-          <li><a href="http://github.com/brookr" target="_blank" class="icon-github"> GitHub</a></li> -->
+          <li><a href="/"> Books</a></li>
+          <li a href="/about" id="about">About</a></li>
+          <li a href="/new" id="new">New</a></li>
         </ul>
       </nav>
+      <main>
         <section id="books">
             <h1>My Books</h1>
             <h2>Book Title</h2>
@@ -40,16 +36,21 @@
         </section>
         <section id="about">
                 <p>world's greatest book tracking app</p>
-            </section>
+        </section>
+      </main>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>
+    <script src="https://cdn.rawgit.com/visionmedia/page.js/master/page.js"></script>    
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/0.3.6/marked.min.js"></script> TODO: Deal with this-->
     <!-- <script src="vendor/scripts/highlight.pack.js"></script> TODO: Deal with this-->
-    <script src="/scripts/book.js"></script>
-    <script src="/scripts/bookView.js"></script>
+    <script src="scripts/models/book.js"></script>
+    <script src="scripts/views/bookView.js"></script>
+    <script src="scripts/routes.js"></script>
     <script>
-    //   Article.fetchAll(bookView.initIndexPage);
-    </script>
+    //   Book.fetchAll(bookView.initIndexPage);
+    // (app.Book.fetchAll(app.book
+    // View.initIndexPage));
+   </script>
   </body>
 </html>
